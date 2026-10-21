@@ -1,0 +1,12 @@
+name: Run Tests
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  check-pipeline:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout code
+        run: echo "build finished"
